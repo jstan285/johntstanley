@@ -1,0 +1,44 @@
+/* Revision 10: clear context, leadership evidence, and a faster reading layer. */
+.home-copy .intro{max-width:42ch}
+.home-copy .home-context{max-width:46ch;font-size:1rem;line-height:1.55;margin:18px 0 0;color:var(--body)}
+.home-copy .specialties{margin:16px 0 24px}
+.situation-row{padding:24px 0}
+.situation-detail .situation-output{margin:0 0 8px;max-width:38ch}
+.evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 48px}
+.evidence-grid article{padding-top:18px}
+.evidence-grid .evidence-category{margin-bottom:12px}
+.evidence-grid .evidence-result{font-size:clamp(1.8rem,2.4vw,2.3rem)}
+.evidence-grid .evidence-result-label{margin-bottom:12px}
+.evidence-grid h3{font-size:1.4rem;margin-bottom:12px;max-width:none}
+.evidence-grid article>p:last-of-type{max-width:58ch;margin-bottom:10px}
+.working-role-link{margin-top:8px}
+.chapter-highlights{max-width:70ch}
+.chapter-detail-copy h3{font-size:1.1rem;line-height:1.4;font-weight:600;color:var(--green);margin:22px 0 8px}
+.chapter-detail-copy p{max-width:70ch}
+.chapter-detail summary{padding:16px 0;cursor:pointer}
+.chapter-services{display:flex;flex-wrap:wrap;gap:8px 24px;margin:18px 0 4px}
+.chapter-services a{padding:8px 0;line-height:1.5}
+.chapter-ongoing{border-left:2px solid var(--line);padding-left:16px}
+@media(max-width:800px){
+ .evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:0;gap:28px}
+ .evidence-next{margin-left:0}
+ .evidence-grid .evidence-result{font-size:1.85rem}
+ .home-copy .home-context{max-width:60ch}
+}
+@media(max-width:540px){
+ .evidence-grid{grid-template-columns:1fr;gap:26px}
+ .home-copy .home-context{font-size:.95rem;line-height:1.55}
+ .home-copy .specialties{margin:14px 0 18px}
+ .situation-row{gap:12px;padding:22px 0}
+ .situation-label>.glyph{width:44px;height:44px}
+ .situation-detail .situation-output{font-size:1rem}
+ .evidence-grid .evidence-result{font-size:1.9rem}
+ .evidence-grid h3{font-size:1.3rem}
+ .chapter-services{gap:8px 20px}
+}
+@media print{
+ .evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:0}
+ .evidence-grid article{break-inside:avoid}
+ .chapter-detail::details-content{content-visibility:visible;display:block}
+ .chapter-detail summary{display:none}
+}

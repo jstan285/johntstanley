@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none" stroke="#005c3d" stroke-width="1.4" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <path d="M28 80V49a8 8 0 0 1 8-8h59a8 8 0 0 1 8 8v53a8 8 0 0 1-8 8H67l-18 16v-16H36a8 8 0 0 1-8-8V80Z" style="vector-effect:non-scaling-stroke;stroke-width:1.5px" />
+  <path d="M47 62h38M47 76h28" style="vector-effect:non-scaling-stroke;stroke-width:1.5px" />
+  <circle cx="120" cy="102" r="13" style="vector-effect:non-scaling-stroke;stroke-width:1.5px" />
+  <path d="M98 145v-9a22 22 0 0 1 44 0v9M77 137h10M145 81l9-9M144 109h13" style="vector-effect:non-scaling-stroke;stroke-width:1.5px" />
+  <circle cx="153" cy="73" r="4" fill="#a0c72c" stroke="none" />
+</svg>

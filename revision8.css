@@ -1,0 +1,36 @@
+/* Revision 8: comfortable typography and distinct, legible vector artwork. */
+h1,h2{letter-spacing:-.02em}
+h3,.useful-output h3{letter-spacing:-.015em}
+.home-copy h1{letter-spacing:-.02em;line-height:1.04}
+.editorial h2,.closing h2,.evidence-grid .evidence-result{letter-spacing:-.02em}
+.brand-logo{width:52px;height:52px;object-fit:contain}
+.footer .brand-logo{width:40px;height:40px}
+.about-portrait{max-width:240px}
+.glyph{object-fit:contain}
+.situation-label>.glyph{width:72px;height:72px}
+.chapter-tab>.glyph{width:64px;height:58px}
+.production-diagram,.audiences-diagram{margin:0;color:var(--green);text-align:center}
+.production-diagram svg,.audiences-diagram svg{display:block;width:100%;height:auto}
+.diagram-stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;font-size:.875rem;line-height:1.45;color:var(--body)}
+.production-diagram figcaption{margin-top:14px;font-size:1rem;line-height:1.5;color:var(--ink)}
+.audiences-label{font-size:.95rem;line-height:1.5;color:var(--body);margin-bottom:10px}
+.audiences-diagram figcaption{display:grid;grid-template-columns:1fr 1fr;gap:36px;font-size:.95rem;line-height:1.5;color:var(--body)}
+.audiences-diagram p{margin:22px 0 0;font-size:1rem;color:var(--ink)}
+.chapter-question{display:inline-block;padding:8px 0}
+@media(max-width:800px){
+ .header .brand-logo{width:44px;height:44px}
+ .production-diagram,.audiences-diagram{width:min(360px,100%);margin-top:10px}
+}
+@media(max-width:480px){
+ .header .brand-logo{width:40px;height:40px}
+ .situation-label>.glyph{width:52px;height:52px}
+ .editorial h2{letter-spacing:-.02em}
+ .diagram-stages{font-size:.8rem;gap:8px}
+ .production-diagram figcaption,.audiences-diagram p{font-size:.95rem}
+ .audiences-diagram figcaption{font-size:.875rem;gap:24px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .button{transition:none}
+ .button:hover{transform:none}
+}

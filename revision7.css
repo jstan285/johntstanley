@@ -1,0 +1,33 @@
+/* Revision 7: a quick hiring case with optional supporting detail. */
+.situation-detail .situation-output{font-size:1.05rem;font-weight:500}
+.evidence-grid h3{font-size:1.5rem;line-height:1.2;font-weight:600}
+.evidence-grid .evidence-result-label{margin-bottom:18px}
+.evidence-section{border-top:1px solid #d4e0d9}
+.useful-output{margin:0 0 22px;padding:0 0 0 20px}
+.useful-output .eyebrow{font-size:.72rem;letter-spacing:.12em;margin:0 0 10px}
+.useful-output h3{font-size:1.35rem;line-height:1.25;font-weight:600;letter-spacing:-.035em;margin:0 0 12px}
+.useful-output ul{margin:0;padding-left:18px;color:var(--ink);font-size:1.05rem;line-height:1.5}
+.useful-output li+li{margin-top:6px}
+.useful-output li::marker,.chapter-highlights li::marker{color:var(--green)}
+.chapter-highlights{padding-left:22px;margin:0 0 22px;color:var(--ink);font-size:1.1rem;line-height:1.5;max-width:62ch}
+.chapter-highlights li+li{margin-top:12px}
+.chapter-detail{border-top:1px solid var(--line);margin:22px 0}
+.chapter-detail summary{padding:16px 0;color:var(--green);line-height:1.5;text-decoration:underline;text-underline-offset:4px}
+.chapter-detail-copy{padding:2px 0 8px}
+.chapter-detail-copy p{line-height:1.6}
+@media(max-width:800px){
+ .useful-output h3{font-size:1.4rem}
+ .chapter-highlights{max-width:none}
+}
+@media(max-width:480px){
+ .useful-output{padding-left:16px;margin-bottom:20px}
+ .useful-output h3{font-size:1.3rem}
+ .chapter-highlights{font-size:1.05rem}
+ .chapter-detail summary{font-size:1rem}
+}
+@media print{
+ .useful-output h3{font-size:13pt}
+ .useful-output ul,.chapter-highlights{font-size:11pt}
+ .chapter-detail::details-content{content-visibility:visible;display:block}
+ .chapter-detail summary{display:none}
+}

@@ -1,0 +1,45 @@
+/* Revision 5: reveal the range through concrete work and a connected narrative. */
+.approach-story{padding:52px 0}
+.approach-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:70px;align-items:start}
+.approach-grid h2{font-size:clamp(2rem,3.3vw,2.9rem);max-width:20ch;line-height:1.12}
+.approach-grid .approach-lead{font-size:1.2rem;line-height:1.55;color:var(--ink)}
+.approach-grid p{max-width:65ch}
+.approach-grid .text-link{display:inline-block;padding:8px 0;margin-top:2px}
+.hero-copy>p:not(.eyebrow){line-height:1.6}
+.editorial-grid{grid-template-columns:60px minmax(0,1.1fr) minmax(75px,.38fr) minmax(0,1.75fr)}
+.editorial h2{font-size:clamp(1.7rem,2.65vw,2.4rem);line-height:1.16}
+.editorial .diagram{padding-left:18px}
+.chapter-caption{text-align:center;max-width:29ch;line-height:1.5}
+.working-section{border-top:1px solid #d4e0d9}
+@media(max-width:1100px){
+ .approach-grid{gap:40px}
+ .editorial-grid{grid-template-columns:50px minmax(0,1fr) 75px minmax(0,1.65fr);gap:22px}
+}
+@media(max-width:800px){
+ .approach-story{padding:38px 0}
+ .approach-grid{grid-template-columns:1fr;gap:24px}
+ .approach-grid h2{max-width:26ch}
+ .approach-grid .approach-lead{font-size:1.15rem}
+ .editorial-grid{grid-template-columns:50px minmax(0,1fr) 95px;gap:20px}
+ .editorial h2{font-size:2rem;max-width:none}
+ .editorial .diagram{padding:0}
+ .editorial .body-copy{grid-column:2/-1}
+}
+@media(max-width:480px){
+ .approach-story{padding:32px 0}
+ .approach-grid{gap:20px}
+ .approach-grid h2{font-size:1.9rem}
+ .approach-grid .approach-lead{font-size:1.1rem}
+ .editorial-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+ .editorial h2{font-size:1.85rem}
+ .editorial .body-copy{grid-column:1}
+ .chapter-caption{text-align:left;max-width:none}
+}
+@media print{
+ .approach-story{padding:18px 0;background:white}
+ .approach-grid{grid-template-columns:1fr 1.5fr;gap:25px}
+ .approach-grid h2{font-size:19pt}
+ .approach-grid .approach-lead{font-size:11pt}
+ .editorial-grid{grid-template-columns:40px 1fr 2fr}
+ .editorial .body-copy{grid-column:3}
+}
